@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Hero from './components/Main';
+import Services from './components/Services';
+import Portfolio from './components/Portfolio';
+import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Login from './components/Login';
+import Signup from './components/Signup';
+import AboutUs from './components/AboutUs';
+import GlowingBackground from './components/GlowingBackground';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 text-white min-h-screen">
+        <GlowingBackground />
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Services />
+                <Portfolio />
+                <Testimonials />
+                <AboutUs />
+                <Contact />
+              </>
+            }
+          />
+          <Route path="/login" element={
+            <>
+            {/* <Header/> */}
+            <Login />
+            </>
+            
+            
+          } />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
-
-export default App;
