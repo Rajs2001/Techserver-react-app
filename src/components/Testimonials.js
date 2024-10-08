@@ -4,20 +4,24 @@ import { motion } from 'framer-motion';
 const testimonials = [
   {
     name: 'John Doe',
-    role: 'Homeowner',
-    content: 'The custom dining table WoodMaster created for us is absolutely stunning. It\'s become the centerpiece of our home!',
+    role: 'blogger',
+    content: 'The blog page website delivered a sleek, user-friendly design with seamless navigation and dynamic features. perfect for show casing content while enhancing user engagement',
   },
   {
     name: 'Jane Smith',
-    role: 'Interior Designer',
-    content: 'I\'ve worked with many woodworking companies, but WoodMaster\'s attention to detail and craftsmanship is unparalleled.',
+    role: 'businessman',
+    content: 'i\'ve recently ordered the advertisement banner, The banner exceeds expectations with its eye-catching design and clean messaging, it perfectly represented my startup, capturing attention and driving engagement efficiently',
   },
   {
     name: 'Mike Johnson',
     role: 'Restaurant Owner',
-    content: 'The custom bar and tables WoodMaster made for our restaurant have received countless compliments from our patrons.',
+    content: 'Recently i have ordered a mobile app for my restaurant through techserver, and i\'m extreamly impressed! the App isuser friendly, sleek and tailored perfectly to my business needs. there teams deliver a high quality product at efficient price. ',
   },
 ];
+
+const reviewsMore = ()=>{
+  alert('view more of testimonials')
+}
 
 export default function Testimonials() {
   return (
@@ -52,6 +56,20 @@ export default function Testimonials() {
           ))}
         </div>
       </div>
+      <motion.button
+        onClick={reviewsMore}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        style={{
+          margin: "10px 20px 0 0",
+          float: "right",
+          background: "#304d4d",
+        }}
+        className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-full text-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all mb-6 mt-6"
+      >
+        View testimonials
+      </motion.button>
     </section>
   );
 }

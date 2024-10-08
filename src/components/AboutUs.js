@@ -11,7 +11,7 @@ export default function AboutUs() {
           transition={{ duration: 0.8 }}
           className="text-5xl font-bold mb-12 text-center text-white"
         >
-          About Us
+          Why Choose Techserver?
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -21,10 +21,13 @@ export default function AboutUs() {
           >
             <h3 className="text-3xl font-semibold mb-4 text-white">Our Story</h3>
             <p className="text-gray-300 mb-6">
-              Founded in 2005, WoodMaster has been at the forefront of innovative woodworking for over 15 years. Our passion for craftsmanship and dedication to quality have made us a leader in the industry.
+            At Techserver, we specialize in delivering end-to-end technical solutions for startups, understanding their unique challenges.
             </p>
-            <p className="text-gray-300">
-              We believe in the power of natural materials and the beauty of handcrafted pieces. Our team of skilled artisans combines traditional techniques with modern design to create unique, lasting works of art.
+            <p className="text-gray-300 mb-6">
+            We combine innovative design with cutting-edge technology to ensure that your digital product is built to scale.
+            </p>
+            <p className="text-gray-300 ">
+            Key strengths: experienced team, startup-focused approach, quick turnaround times, and ongoing support.
             </p>
           </motion.div>
           <motion.div

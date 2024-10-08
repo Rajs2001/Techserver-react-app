@@ -21,8 +21,8 @@ export default function Contact() {
             className="space-y-4"
           >
             <h3 className="text-2xl font-semibold mb-4">Contact Information</h3>
-            <p>📞 (123) 456-7890</p>
-            <p>✉️ info@woodmaster.com</p>
+            <p>📞 (91) 123-456-7890</p>
+            <p>✉️ info@techserve.com</p>
             <p>🏠 123 Craftsman Lane, Woodville, WD 12345</p>
           </motion.div>
           <motion.form
