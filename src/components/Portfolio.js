@@ -46,7 +46,7 @@ const portfolioItems = [
 ];
 
 const products = () => {
-  // window.location.href = "https://investtplus.com/";
+  // window.location.href = "https://investtplus.com/"; //here will be the link
   alert('component of explore more for our all projects and there detail, basically a blog like page which has to design ')
 };
 
@@ -124,5 +124,6 @@ export default function Portfolio() {
         Explore Our projects
       </motion.button>
     </section>
+    
   );
 }
